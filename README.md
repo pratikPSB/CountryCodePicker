@@ -36,7 +36,7 @@ CCP removes confusion about how to add number and thus make view more understand
  1. Add CCP to layout using the following:
 
      ````xml
-     <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+     <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
            android:id="@+id/ccp"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
@@ -98,7 +98,7 @@ How to add to your project
 3. Add ccp view to xml layout
    
     ````xml
-    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+    <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content" />
@@ -143,7 +143,7 @@ Features
 --------
 
 If you prefer experience along with only reads, an demo android app is available that demonstrates all the features of this library. Click below button to download from Playstore.
-<br/><a href="https://play.google.com/store/apps/details?id=com.rilixtech.countrycodepicker"><img src="http://www.android.com/images/brand/get_it_on_play_logo_large.png"/></a>
+<br/><a href="https://play.google.com/store/apps/details?id=com.pratikPSB.countrycodepicker"><img src="http://www.android.com/images/brand/get_it_on_play_logo_large.png"/></a>
 
 If you just want to read them, here you go:
  
@@ -157,7 +157,7 @@ If you just want to read them, here you go:
      Add `app:ccp_defaultNameCode="US"` (replace "US" with your default country name code) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
 	  ````xml
-	  <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+	  <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -169,7 +169,7 @@ If you just want to read them, here you go:
      - Setting default country using phone code is not recommended. There are few cases where more than one countries have same phone code. Say US and Canada have +1. Putting '1' will result in Canada even if you were intended  for US.  `Use app:cpp_defaultNameCode` or `app:cpp_countryPreference` to overcome issue.
 	
 	   ````xml
-	   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+	   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -229,7 +229,7 @@ If you just want to read them, here you go:
   Add `app:ccp_countryPreference="US,ID,NZ"` (replace "US,ID,NZ" with your preference) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -283,7 +283,7 @@ If you just want to read them, here you go:
   Add `app:ccp_textColor` property to xml layout
    
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	   android:layout_width="wrap_content"
 	   android:layout_height="wrap_content"
 	   app:ccp_textColor="@color/custom_color"/>
@@ -308,7 +308,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_backgroundColor` property to xml layout
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	   android:layout_width="wrap_content"
 	   android:layout_height="wrap_content"
 	   app:ccp_backgroundColor="@color/custom_color"/>
@@ -330,7 +330,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add app:ccp_textSize property to xml layout
 
    ````xml
-    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+    <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	          android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
 	          app:ccp_textSize="26sp"/>
@@ -347,7 +347,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_arrowSize` property to xml layout
 	      
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	     android:layout_width="wrap_content"
 	     android:layout_height="wrap_content"
 	     app:ccp_arrowSize="26sp"/>
@@ -364,7 +364,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_hideCodeName` property to xml layout
 	      
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	     android:layout_width="wrap_content"
 	     android:layout_height="wrap_content"
 	     app:ccp_hideNameCode="true"/>
@@ -386,7 +386,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_customMasterCountries="US,ID,NZ,BD,PL,RO,ZW"` (replace "US,ID,NZ,BD,PL,RO,ZW" by your own country code names) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
 	      android:id="@+id/ccp"
 	      android:layout_width="wrap_content"
 	      android:layout_height="wrap_content"
@@ -421,7 +421,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_textFont="myfonts.ttf"` to use the font
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
        	 android:id="@+id/ccp"
        	 android:layout_width="wrap_content"
          android:layout_height="wrap_content"
@@ -438,7 +438,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
  Add `app:ccp_showFlag="false"` to remove flag using xml layout
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -460,7 +460,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_showFullName="true"` to show full nameinstead of name code
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -479,7 +479,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_clickable="true"` to enable click listener.
 
    ````xml
-   <com.rilixtech.CountryCodePicker
+   <com.pratikPSB.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -496,7 +496,7 @@ CCP background color can be set to any custom color. It will be defaulting to ap
   Add `app:ccp_hidePhoneCode="true"` to hide the phone code.
 
    ````xml
-   <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+   <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -517,7 +517,7 @@ You need to set an EditText for phone number with `registerPhoneNumberTextView()
    Add `app:ccp_enablePhoneAutoFormatter="false"` to disable.
 
       ````xml
-      <com.rilixtech.CountryCodePicker
+      <com.pratikPSB.CountryCodePicker
              android:id="@+id/ccp"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
@@ -548,7 +548,7 @@ You need to set an EditText for phone number with `registerPhoneNumberTextView()
    Add `app:ccp_setCountryByTimeZone="false"` to disable.
 
       ````xml
-      <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+      <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
              android:id="@+id/ccp"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
