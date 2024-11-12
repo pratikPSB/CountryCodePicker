@@ -1,4 +1,4 @@
-package com.rilixtech.countrycodepicker;
+package com.pratikPSB.countrycodepicker;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+import com.pratikPSB.widget.countrycodepicker.CountryCodePicker;
 
 public class PerformClickActivity extends AppCompatActivity {
 

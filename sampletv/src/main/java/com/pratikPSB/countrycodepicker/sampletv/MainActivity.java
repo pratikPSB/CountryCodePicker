@@ -1,10 +1,10 @@
-package com.rilixtech.countrycodepicker.sampletv;
+package com.pratikPSB.countrycodepicker.sampletv;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.EditText;
 
-import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+import com.pratikPSB.widget.countrycodepicker.CountryCodePicker;
 
 public class MainActivity extends Activity {
 

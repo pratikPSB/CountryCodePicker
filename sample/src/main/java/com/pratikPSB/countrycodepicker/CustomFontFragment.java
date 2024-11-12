@@ -1,4 +1,4 @@
-package com.rilixtech.countrycodepicker;
+package com.pratikPSB.countrycodepicker;
 
 
 import android.graphics.Typeface;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+import com.pratikPSB.widget.countrycodepicker.CountryCodePicker;
 
 
 /**

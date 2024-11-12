@@ -1,4 +1,4 @@
-package com.rilixtech.countrycodepicker;
+package com.pratikPSB.countrycodepicker;
 
 import android.os.Bundle;
 

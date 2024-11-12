@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rilixtech.countrycodepicker.CustomSizeFragment">
+    tools:context="com.pratikPSB.countrycodepicker.CustomSizeFragment">
 
     <androidx.cardview.widget.CardView style="@style/parentCard">
 
@@ -56,7 +56,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical">
 
-                                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                <com.pratikPSB.widget.countrycodepicker.CountryCodePicker
                                     android:id="@+id/ccp6"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"

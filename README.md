@@ -1,6 +1,5 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Country%20Code%20Picker%20Library-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5753)
-[![](https://jitpack.io/v/joielechong/CountryCodePicker.svg)](https://jitpack.io/#joielechong/CountryCodePicker)
-
+[![](https://jitpack.io/v/pratikPSB/CountryCodePicker.svg)](https://jitpack.io/#pratikPSB/CountryCodePicker)
 Country Code Picker Library
 ===========================
 

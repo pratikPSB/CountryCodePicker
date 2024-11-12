@@ -1,4 +1,4 @@
-package com.rilixtech.countrycodepicker;
+package com.pratikPSB.countrycodepicker;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+import com.pratikPSB.widget.countrycodepicker.CountryCodePicker;
 
 
 /**

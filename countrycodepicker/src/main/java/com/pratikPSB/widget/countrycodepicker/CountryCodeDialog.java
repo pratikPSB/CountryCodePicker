@@ -1,4 +1,4 @@
-package com.rilixtech.widget.countrycodepicker;
+package com.pratikPSB.widget.countrycodepicker;
 
 import android.app.Dialog;
 import android.content.Context;
