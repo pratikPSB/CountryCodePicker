@@ -91,7 +91,7 @@ How to add to your project
 
     ````groovy
     dependencies {
-        implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+        implementation 'com.github.pratikPSB:countrycodepicker:2.4.3'
     }
     ````
 
