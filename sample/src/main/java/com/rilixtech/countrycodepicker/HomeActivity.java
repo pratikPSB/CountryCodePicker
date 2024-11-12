@@ -2,16 +2,17 @@ package com.rilixtech.countrycodepicker;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class HomeActivity extends AppCompatActivity {
 
     TextView textIntro, textDefaultCountry, textPreference, textCustomMaster,
-        textsetCountry, textGetCountry, textFullNumber, textCustomColor,
-        textCustomSize, textCustomFont, tvCheckValidity;
+            textsetCountry, textGetCountry, textFullNumber, textCustomColor,
+            textCustomSize, textCustomFont, tvCheckValidity;
     Button startDemo;
 
     @Override

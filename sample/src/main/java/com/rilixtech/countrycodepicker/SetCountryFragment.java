@@ -1,7 +1,6 @@
 package com.rilixtech.countrycodepicker;
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -10,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.rilixtech.widget.countrycodepicker.Country;
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
@@ -21,10 +22,11 @@ import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
  */
 public class SetCountryFragment extends Fragment {
 
-    EditText editTextCode,editTextNameCode;
-    Button buttonSetCode,buttonSetNameCode;
+    EditText editTextCode, editTextNameCode;
+    Button buttonSetCode, buttonSetNameCode;
     CountryCodePicker ccp;
     Button buttonNext;
+
     public SetCountryFragment() {
     }
 
@@ -47,12 +49,12 @@ public class SetCountryFragment extends Fragment {
         buttonSetCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int code=-1;
-                try{
-                    code=Integer.parseInt(editTextCode.getText().toString());
+                int code = -1;
+                try {
+                    code = Integer.parseInt(editTextCode.getText().toString());
                     ccp.setCountryForPhoneCode(code);
-                }catch (Exception ex){
-                    Toast.makeText(getActivity(),"Invalid number format",Toast.LENGTH_LONG).show();
+                } catch (Exception ex) {
+                    Toast.makeText(getActivity(), "Invalid number format", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -60,10 +62,10 @@ public class SetCountryFragment extends Fragment {
         buttonSetNameCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try{
-                    String code=editTextNameCode.getText().toString();
+                try {
+                    String code = editTextNameCode.getText().toString();
                     ccp.setCountryForNameCode(code);
-                }catch (Exception ex){
+                } catch (Exception ex) {
                 }
             }
         });
@@ -71,7 +73,7 @@ public class SetCountryFragment extends Fragment {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((ExampleActivity) getActivity()).viewPager.setCurrentItem(((ExampleActivity) getActivity()).viewPager.getCurrentItem()+1);
+                ((ExampleActivity) getActivity()).viewPager.setCurrentItem(((ExampleActivity) getActivity()).viewPager.getCurrentItem() + 1);
             }
         });
     }
@@ -85,7 +87,7 @@ public class SetCountryFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                buttonSetCode.setText("Set country with code "+s);
+                buttonSetCode.setText("Set country with code " + s);
             }
 
             @Override
@@ -102,7 +104,7 @@ public class SetCountryFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                buttonSetNameCode.setText("Set country with name code '"+s+"'");
+                buttonSetNameCode.setText("Set country with name code '" + s + "'");
             }
 
             @Override
@@ -122,12 +124,12 @@ public class SetCountryFragment extends Fragment {
     }
 
     private void assignViews() {
-        editTextNameCode=(EditText)getView().findViewById(R.id.editText_countryNameCode);
-        editTextCode=(EditText)getView().findViewById(R.id.editText_countryCode);
-        ccp=(CountryCodePicker)getView().findViewById(R.id.ccp);
-        buttonSetCode=(Button) getView().findViewById(R.id.button_setCountry);
-        buttonSetNameCode=(Button) getView().findViewById(R.id.button_setCountryNameCode);
-        buttonNext=(Button)getView().findViewById(R.id.button_next);
+        editTextNameCode = (EditText) getView().findViewById(R.id.editText_countryNameCode);
+        editTextCode = (EditText) getView().findViewById(R.id.editText_countryCode);
+        ccp = (CountryCodePicker) getView().findViewById(R.id.ccp);
+        buttonSetCode = (Button) getView().findViewById(R.id.button_setCountry);
+        buttonSetNameCode = (Button) getView().findViewById(R.id.button_setCountryNameCode);
+        buttonNext = (Button) getView().findViewById(R.id.button_next);
     }
 
 }

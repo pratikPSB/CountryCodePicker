@@ -1,11 +1,12 @@
 package com.rilixtech.countrycodepicker;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class ExampleActivity extends AppCompatActivity {
 
@@ -28,8 +29,8 @@ public class ExampleActivity extends AppCompatActivity {
      * Assign adapter to viewPager
      */
     private void setUpViewPager() {
-        if(pagerAdapter==null){
-            pagerAdapter=new PagerAdapter(getSupportFragmentManager());
+        if (pagerAdapter == null) {
+            pagerAdapter = new PagerAdapter(getSupportFragmentManager());
         }
         viewPager.setAdapter(pagerAdapter);
         if (!initLoaded) {
@@ -42,10 +43,10 @@ public class ExampleActivity extends AppCompatActivity {
      * assign views to object from layout
      */
     private void assignViews() {
-        viewPager=(ViewPager)findViewById(R.id.viewPager);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
     }
 
-    class PagerAdapter extends FragmentPagerAdapter{
+    class PagerAdapter extends FragmentPagerAdapter {
 
         public PagerAdapter(FragmentManager fm) {
             super(fm);
@@ -53,7 +54,7 @@ public class ExampleActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            switch (position){
+            switch (position) {
                 case 0:
                     return new IntroductionFragment();
                 case 1:

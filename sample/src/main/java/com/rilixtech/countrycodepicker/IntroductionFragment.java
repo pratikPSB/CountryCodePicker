@@ -2,11 +2,13 @@ package com.rilixtech.countrycodepicker;
 
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.fragment.app.Fragment;
+
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
 
 /**
@@ -16,6 +18,7 @@ public class IntroductionFragment extends Fragment {
 
 
     Button buttonGo;
+
     public IntroductionFragment() {
         // Required empty public constructor
     }
@@ -43,12 +46,12 @@ public class IntroductionFragment extends Fragment {
         buttonGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((ExampleActivity)getActivity()).viewPager.setCurrentItem(1);
+                ((ExampleActivity) getActivity()).viewPager.setCurrentItem(1);
             }
         });
     }
 
     private void assignViews() {
-        buttonGo=(Button)getView().findViewById(R.id.button_letsGo);
+        buttonGo = (Button) getView().findViewById(R.id.button_letsGo);
     }
 }

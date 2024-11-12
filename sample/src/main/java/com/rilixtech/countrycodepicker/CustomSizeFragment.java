@@ -2,12 +2,13 @@ package com.rilixtech.countrycodepicker;
 
 
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -16,11 +17,11 @@ import android.widget.Button;
 public class CustomSizeFragment extends Fragment {
 
 
+    Button buttonNext;
+
     public CustomSizeFragment() {
         // Required empty public constructor
     }
-
-    Button buttonNext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +33,7 @@ public class CustomSizeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        buttonNext=(Button)getView().findViewById(R.id.button_next);
+        buttonNext = (Button) getView().findViewById(R.id.button_next);
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

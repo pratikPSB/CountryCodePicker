@@ -3,12 +3,13 @@ package com.rilixtech.countrycodepicker;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
 
@@ -20,7 +21,7 @@ public class CustomFontFragment extends Fragment {
 
     Button buttonNext;
     View rootView;
-    private CountryCodePicker ccp6,ccp5,ccp4,ccp3,ccp2,ccp1;
+    private CountryCodePicker ccp6, ccp5, ccp4, ccp3, ccp2, ccp1;
 
     public CustomFontFragment() {
         // Required empty public constructor
@@ -30,7 +31,7 @@ public class CustomFontFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView=inflater.inflate(R.layout.fragment_custom_font, container, false);
+        rootView = inflater.inflate(R.layout.fragment_custom_font, container, false);
         return rootView;
     }
 
@@ -44,14 +45,14 @@ public class CustomFontFragment extends Fragment {
 
     private void applyCustomFonts() {
 //        setTTFfont(ccp2,"bookos.ttf");
-        setTTFfont(ccp3,"hack.ttf");
-        setTTFfont(ccp4,"playfair.ttf");
-        setTTFfont(ccp5,"raleway.ttf");
-        setTTFfont(ccp6,"titillium.ttf");
+        setTTFfont(ccp3, "hack.ttf");
+        setTTFfont(ccp4, "playfair.ttf");
+        setTTFfont(ccp5, "raleway.ttf");
+        setTTFfont(ccp6, "titillium.ttf");
     }
 
     private void setTTFfont(CountryCodePicker ccp, String fontFileName) {
-        Typeface typeFace=Typeface.createFromAsset(getContext().getAssets(),fontFileName);
+        Typeface typeFace = Typeface.createFromAsset(getContext().getAssets(), fontFileName);
         ccp.setTypeFace(typeFace);
     }
 
@@ -66,12 +67,12 @@ public class CustomFontFragment extends Fragment {
     }
 
     private void assignViews() {
-        ccp1=(CountryCodePicker)rootView.findViewById(R.id.ccp1);
-        ccp2=(CountryCodePicker)rootView.findViewById(R.id.ccp2);
-        ccp3=(CountryCodePicker)rootView.findViewById(R.id.ccp3);
-        ccp4=(CountryCodePicker)rootView.findViewById(R.id.ccp4);
-        ccp5=(CountryCodePicker)rootView.findViewById(R.id.ccp5);
-        ccp6=(CountryCodePicker)rootView.findViewById(R.id.ccp6);
+        ccp1 = (CountryCodePicker) rootView.findViewById(R.id.ccp1);
+        ccp2 = (CountryCodePicker) rootView.findViewById(R.id.ccp2);
+        ccp3 = (CountryCodePicker) rootView.findViewById(R.id.ccp3);
+        ccp4 = (CountryCodePicker) rootView.findViewById(R.id.ccp4);
+        ccp5 = (CountryCodePicker) rootView.findViewById(R.id.ccp5);
+        ccp6 = (CountryCodePicker) rootView.findViewById(R.id.ccp6);
         buttonNext = (Button) rootView.findViewById(R.id.button_next);
     }
 }

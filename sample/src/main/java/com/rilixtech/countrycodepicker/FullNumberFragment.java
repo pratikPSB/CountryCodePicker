@@ -2,8 +2,6 @@ package com.rilixtech.countrycodepicker;
 
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.appcompat.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -12,7 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.fragment.app.Fragment;
+
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+
 import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 
 /**
@@ -22,10 +24,11 @@ public class FullNumberFragment extends Fragment {
 
     public static final String TAG = FullNumberFragment.class.getSimpleName();
 
-    AppCompatEditText editTextLoadFullNumber,editTextLoadCarrierNumber,editTextGetFullNumber,editTextGetCarrierNumber;
-    CountryCodePicker ccpLoadNumber,ccpGetNumber;
-    Button buttonLoadNumber,buttonGetNumber,buttonGetNumberWithPlus;
+    AppCompatEditText editTextLoadFullNumber, editTextLoadCarrierNumber, editTextGetFullNumber, editTextGetCarrierNumber;
+    CountryCodePicker ccpLoadNumber, ccpGetNumber;
+    Button buttonLoadNumber, buttonGetNumber, buttonGetNumberWithPlus;
     Button buttonNext;
+
     public FullNumberFragment() {
         // Required empty public constructor
     }
@@ -56,7 +59,7 @@ public class FullNumberFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                buttonLoadNumber.setText("Load "+s+" to CCP.");
+                buttonLoadNumber.setText("Load " + s + " to CCP.");
             }
 
             @Override
@@ -99,36 +102,38 @@ public class FullNumberFragment extends Fragment {
     private void registerCarrierEditText() {
         ccpLoadNumber.registerPhoneNumberTextView(editTextLoadCarrierNumber);
         ccpLoadNumber.setPhoneNumberInputValidityListener(new CountryCodePicker.PhoneNumberInputValidityListener() {
-            @Override public void onFinish(CountryCodePicker ccp, boolean isValid) {
-                Log.d(TAG, ccp.getPhoneNumber() + " " + (isValid ? "is valid": "not valid"));
+            @Override
+            public void onFinish(CountryCodePicker ccp, boolean isValid) {
+                Log.d(TAG, ccp.getPhoneNumber() + " " + (isValid ? "is valid" : "not valid"));
             }
         });
 
         final PhoneNumberUtil mPhoneUtil = PhoneNumberUtil.createInstance(getContext());
         ccpGetNumber.registerPhoneNumberTextView(editTextGetCarrierNumber);
         ccpGetNumber.setPhoneNumberInputValidityListener(new CountryCodePicker.PhoneNumberInputValidityListener() {
-            @Override public void onFinish(CountryCodePicker ccp, boolean isValid) {
-                Log.d(TAG, ccp.getPhoneNumber() + " " + (isValid ? "is valid": "not valid"));
+            @Override
+            public void onFinish(CountryCodePicker ccp, boolean isValid) {
+                Log.d(TAG, ccp.getPhoneNumber() + " " + (isValid ? "is valid" : "not valid"));
                 Log.d(TAG, "PhoneNumberFormat.E164 = " + mPhoneUtil.format(ccp.getPhoneNumber(),
-                    PhoneNumberUtil.PhoneNumberFormat.E164));
+                        PhoneNumberUtil.PhoneNumberFormat.E164));
             }
         });
     }
 
     private void assignView() {
         //load number
-        editTextLoadFullNumber=(AppCompatEditText) getView().findViewById(R.id.editText_loadFullNumber);
-        editTextLoadCarrierNumber=(AppCompatEditText)getView().findViewById(R.id.editText_loadCarrierNumber);
-        ccpLoadNumber=(CountryCodePicker)getView().findViewById(R.id.ccp_loadFullNumber);
-        buttonLoadNumber=(Button)getView().findViewById(R.id.button_loadFullNumber);
+        editTextLoadFullNumber = (AppCompatEditText) getView().findViewById(R.id.editText_loadFullNumber);
+        editTextLoadCarrierNumber = (AppCompatEditText) getView().findViewById(R.id.editText_loadCarrierNumber);
+        ccpLoadNumber = (CountryCodePicker) getView().findViewById(R.id.ccp_loadFullNumber);
+        buttonLoadNumber = (Button) getView().findViewById(R.id.button_loadFullNumber);
 
         //get number
-        editTextGetCarrierNumber=(AppCompatEditText)getView().findViewById(R.id.editText_getCarrierNumber);
-        editTextGetFullNumber=(AppCompatEditText)getView().findViewById(R.id.editText_getFullNumber);
-        buttonGetNumber=(Button)getView().findViewById(R.id.button_getFullNumber);
-        buttonGetNumberWithPlus=(Button)getView().findViewById(R.id.button_getFullNumberWithPlus);
-        ccpGetNumber=(CountryCodePicker)getView().findViewById(R.id.ccp_getFullNumber);
+        editTextGetCarrierNumber = (AppCompatEditText) getView().findViewById(R.id.editText_getCarrierNumber);
+        editTextGetFullNumber = (AppCompatEditText) getView().findViewById(R.id.editText_getFullNumber);
+        buttonGetNumber = (Button) getView().findViewById(R.id.button_getFullNumber);
+        buttonGetNumberWithPlus = (Button) getView().findViewById(R.id.button_getFullNumberWithPlus);
+        ccpGetNumber = (CountryCodePicker) getView().findViewById(R.id.ccp_getFullNumber);
 
-        buttonNext=(Button)getView().findViewById(R.id.button_next);
+        buttonNext = (Button) getView().findViewById(R.id.button_next);
     }
 }

@@ -30,14 +30,12 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/pointText"
@@ -58,16 +56,16 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
                             android:layout_marginLeft="32dp"
+                            android:layout_marginBottom="8dp"
                             android:text='&#60;com.rilixtech.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultNameCode="US" /&#62;' />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="16dp"
                             android:layout_marginLeft="32dp"
                             android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
                             android:background="@color/dullBG"
                             android:padding="8dp">
 
@@ -107,8 +105,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/pointText"
@@ -124,16 +121,16 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
                             android:layout_marginLeft="32dp"
+                            android:layout_marginBottom="8dp"
                             android:text='&#60;com.rilixtech.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultCode="81" /&#62;' />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="16dp"
                             android:layout_marginLeft="32dp"
                             android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
                             android:background="@color/dullBG"
                             android:padding="8dp">
 
@@ -198,10 +195,12 @@
                     android:paddingLeft="32dp"
                     android:text='A. Using country name code'
                     android:textStyle="italic|bold" />
+
                 <TextView
                     style="@style/pointText"
                     android:paddingLeft="32dp"
                     android:text="use setDefaultCountryUsingNameCode() method." />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -240,10 +239,12 @@
                     android:paddingLeft="32dp"
                     android:text='B. Using phone code'
                     android:textStyle="italic|bold" />
+
                 <TextView
                     style="@style/pointText"
                     android:paddingLeft="32dp"
                     android:text="use setDefaultCountryUsingPhoneCode() method." />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -274,9 +275,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="32dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@color/dullBG"
                     android:padding="8dp">
 

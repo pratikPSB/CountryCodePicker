@@ -46,9 +46,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="#e5e5e5"
                     android:padding="8dp">
 
@@ -85,9 +85,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="#e5e5e5"
                     android:padding="8dp">
 
@@ -109,11 +109,11 @@
 
                             <com.rilixtech.widget.countrycodepicker.CountryCodePicker
                                 android:id="@+id/introduction_ccp"
-                                android:padding="10dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                app:ccp_customMasterCountries="US,ID,NZ"
-                                app:ccp_arrowSize="50dp"/>
+                                android:padding="10dp"
+                                app:ccp_arrowSize="50dp"
+                                app:ccp_customMasterCountries="US,ID,NZ" />
 
                             <EditText
                                 android:layout_width="match_parent"

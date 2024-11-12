@@ -12,9 +12,7 @@
         <shape>
             <padding android:bottom="1dp" />
             <solid android:color="@color/shadow_1" />
-            <corners
-                android:radius="@dimen/corner"
-                />
+            <corners android:radius="@dimen/corner" />
         </shape>
     </item>
     <item>
@@ -25,9 +23,7 @@
                 android:right="0dp"
                 android:top="0dp" />
             <solid android:color="@color/shadow_2" />
-            <corners
-                android:radius="@dimen/corner"
-                />
+            <corners android:radius="@dimen/corner" />
         </shape>
     </item>
     <!-- Background -->

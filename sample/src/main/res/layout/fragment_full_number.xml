@@ -58,7 +58,8 @@
                     android:layout_marginRight="16dp"
                     android:inputType="number"
                     android:singleLine="true"
-                    android:text="+819017901357"/>
+                    android:text="+819017901357" />
+
                 <Button
                     android:id="@+id/button_loadFullNumber"
                     android:layout_width="match_parent"
@@ -66,24 +67,28 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:singleLine="true"
-                    android:text="Load +819017901357 to CCP"/>
+                    android:text="Load +819017901357 to CCP" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="#e5e5e5"
                     android:padding="8dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Phone number"
                             android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -92,8 +97,8 @@
                             <com.rilixtech.widget.countrycodepicker.CountryCodePicker
                                 android:id="@+id/ccp_loadFullNumber"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                />
+                                android:layout_height="wrap_content" />
+
                             <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/editText_loadCarrierNumber"
                                 android:layout_width="match_parent"
@@ -131,9 +136,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="#e5e5e5"
                     android:padding="8dp">
 
@@ -156,10 +161,10 @@
                             <com.rilixtech.widget.countrycodepicker.CountryCodePicker
                                 android:id="@+id/ccp_getFullNumber"
                                 android:layout_width="wrap_content"
-                                app:ccp_enableHint="false"
-                                app:ccp_enablePhoneAutoFormatter="false"
+                                android:layout_height="wrap_content"
                                 app:ccp_defaultNameCode="  "
-                                android:layout_height="wrap_content" />
+                                app:ccp_enableHint="false"
+                                app:ccp_enablePhoneAutoFormatter="false" />
 
                             <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/editText_getCarrierNumber"
@@ -222,12 +227,13 @@
                     style="@style/pointText"
                     android:text="* None of the above functions validate the number format of phone."
                     android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/button_next"
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next feature >"/>
+                    android:text="Next feature >" />
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
